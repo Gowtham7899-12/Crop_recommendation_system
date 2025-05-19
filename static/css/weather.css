@@ -168,6 +168,10 @@ body::before
     overflow: hidden;
     /* background-color: #7323d4; */
     }
+    .card{
+        margin:8px;
+
+    }
     #logo{
     display: flex;
     justify-content: space-evenly;
@@ -194,8 +198,13 @@ body::before
     font-size: 15px;
     text-decoration: none;
     }
+    #footer{
+        position: fixed;
+        bottom: 32px;
+        
+    }
 }
-@media screen and (max-width : 500px){
+@media screen and (max-width : 700px){
     #place{
         width: 15rem;
         height: 35px;

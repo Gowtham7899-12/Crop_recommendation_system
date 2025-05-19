@@ -235,7 +235,7 @@ body::before
         padding-left:35px;
     }
     .input{
-        width: 14rem;
+        width: 12rem;
        
     }
     #btncontainer{
@@ -269,10 +269,9 @@ body::before
 @media screen and (max-width : 500px){
     .entry{
         width: auto;
-        padding-left:25px;
     }
     .input{
-        width: 12rem;
+        width: auto;
        
     }
 }

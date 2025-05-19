@@ -24,16 +24,48 @@ body{
     background-repeat: no-repeat;
     background-size:cover;  
 }
-.innerc{
+.centertitle{
     width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.innerc{
+    width: auto;
+    display: inline-block;
     /* height: 150px; */
     text-align: center;
     margin-top:230px;
     color: white;
 
 }
+#title{
+    width: 100%;
+    margin: auto;
+    font-size: 2em;
+    letter-spacing: 1px;
+    border-right: 3px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+            typing  4s  steps(65)  ,
+            cursor .4s step-end infinite ;
+ 
+}
+/* cursor blinking */
+
+@keyframes cursor {
+    0% {border-color : transparent}
+    
+}
+/* typing effect */
+@keyframes typing {
+    from {width:0%}
+   
+}
+
 #hori{
-    width: 50rem;
+    width: 62rem;
     margin: auto;
 }
 #nav{
@@ -84,7 +116,7 @@ body{
     height: 45px;
     border-radius: 45px;
     border: none;
-    margin-top: 10px;
+    margin-top: 15px;
     background:  rgba(0,0,0,0.6);
     color:white;
     font-size: 18px;
@@ -156,6 +188,10 @@ body{
 
 @media screen and (max-width : 1300px) {
     
+    #title{
+       animation: none;
+       font-size: 14px;
+    }
     #nav{
         width:auto;
         height: 55px;

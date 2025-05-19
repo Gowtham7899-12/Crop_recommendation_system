@@ -12,13 +12,14 @@
     <nav id="nav">
         <div id="logo">
             <img src="{{ url_for('static', filename='images/3228952.png') }}" alt="Logo" id="img">
-            <h3 id="agro">Agro</h3>
+            <h3 id="agro">Agrow</h3>
         </div>
         <div id="list">
             <ul>
                 <li><a href="/"><i class="fa-solid fa-house"></i> Home </a></li>
                 <li><a href="/form"><i class="fa-solid fa-cash-register"></i> Predict </a></li>
-            <li><a href="/weather"><i class="fa-solid fa-cloud" ></i> weather</a></li>
+            <li><a href="/weather"><i class="fa-solid fa-cloud" ></i> Weather</a></li>
+            <li><a href="/Iot"><i class="fa-brands fa-pagelines"></i> Crop</a></li>
             </ul>
         </div>
         
@@ -34,7 +35,7 @@
         <!-- {{info}} -->
          <div id="cardcontainer">
             <div class="card">
-                <img src="{{ url_for('static', filename='images/temp.jpg') }}" class="img" alt="">
+                <img src="{{ url_for('static', filename='images/temp.svg') }}" class="img" alt="">
                 <div class="content">
                     <h3 class="title">Temprature</h3>
                     <p class="desc">{{tempr}} degree celsius</p>
@@ -48,17 +49,32 @@
                 </div>
             </div>
             <div class="card">
-                <img src="{{ url_for('static', filename='images/humid1.png') }}" class="img" alt="">
+                <img src="{{ url_for('static', filename='images/humid1.svg') }}" class="img" alt="">
                 <div class="content">
                     <h3 class="title">Humidity</h3>
                     <p class="desc">{{humid}}%</p>
                 </div>
             </div>
             <div class="card">
-                <img src="{{ url_for('static', filename='images/pressure.jpg') }}" class="img" alt="">
+                <img src="{{ url_for('static', filename='images/pressure.svg') }}" class="img" alt="">
                 <div class="content">
                     <h3 class="title">Pressure</h3>
                     <p class="desc">{{pressure}} Pascal</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/visible.svg') }}" class="img" alt="">
+                <div class="content">
+                    <h3 class="title">Visibility</h3>
+                    <p class="desc">{{visible}} Meters</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/globe.svg') }}" class="img" alt="">
+                <div class="content">
+                    <h3 class="title">Coordinates</h3>
+                    <p class="desc">{{latitude}}° N</p>
+                    <p class="desc">{{longitude}}° E</p>
                 </div>
             </div>
             
@@ -66,7 +82,10 @@
          </div>
          
     <div id="footer">
-        Copy rights @ 2025
+        <footer>
+            <Center>&copy; 2024-25, Design and Developed by Abhi Ram, Chandan Gowda, Gowtham, Likhitha Priya</Center>
+            <hr>
+        </footer>
     </div>
 </body>
 </html>

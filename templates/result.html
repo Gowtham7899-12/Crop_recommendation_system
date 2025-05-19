@@ -13,26 +13,35 @@
     <nav id="nav">
         <div id="logo">
             <img src="{{ url_for('static', filename='images/3228952.png') }}" alt="Logo" id="img">
-            <h3  id="agro">Agro</h3>
+            <h3  id="agro">Agrow</h3>
         </div>
         <div id="list">
             <ul>
                 <li><a href="/"><i class="fa-solid fa-house"></i> Home </a></li>
                 <li><a href="/form"><i class="fa-solid fa-cash-register"></i> Predict </a></li>
-            <li><a href="/weather"><i class="fa-solid fa-cloud" ></i> weather</a></li>
+                <li><a href="/weather"><i class="fa-solid fa-cloud" ></i> Weather</a></li>
+                <li><a href="/Iot"><i class="fa-brands fa-pagelines"></i> Crop</a></li>
             </ul>
         </div>
         
     </nav>
     <div id="heading"><h1 > Crop Recomandation System using Machine Learning</h1></div>
     <div class="login"> 
-    <h2 style="text-align: center;" id="innertitle">Prediction:</h2><br> 
-    <div id="predict"><h3 style="font-weight:100;">Crop recomanded for the land  is : <b>{{prediction_text}}</b></h3></div>
+        <div class="img">
+            <!-- <img style="width: 200px; height: 200px;border-radius: 15px;" src="static\images\home1.jpg" alt="" > -->
+            <img style="width: 200px; height: 200px;border-radius: 15px;" src="static\crops\{{prediction_text}}.jpg" alt="" >
+             
+          </div>
+            <h2 style="text-align: center;" id="innertitle">Prediction:</h2><br> 
+            <div id="predict"><h3 style="font-weight:100;">Crop recomanded for the land  is : <b>{{prediction_text}}</b></h3></div>
     
 </div>
 
 <div id="footer">
-    Copy rights @ 2025
+    <footer>
+        <Center>&copy; 2024-25, Design and Developed by Abhi Ram, Chandan Gowda, Gowtham, Likhitha Priya</Center>
+        <hr>
+    </footer>
 </div>
 </body>    
 </html>
